@@ -1,6 +1,6 @@
 export const timelineMoments = [
     {
-        title: "Our First Date at Ruckers (technically a double date but idk LOL)",
+        title: "Our First Date at Ruckers (technically a double date but idc LOL)",
         text: "I remember feeling a lot of butterflies this day. I remember having so much fun, fun that I haven't had in a while, and that was with you :)",
         image: "../src/assets/First-Date.JPG",
     },
@@ -17,23 +17,28 @@ export const timelineMoments = [
             "../src/assets/Silly-Billy.jpeg",
     },
     {
+        title: "A date I will remember forever",
+        text: "I specifically remember this date because you wore an absolutely stunning dress. Like, you were drop dead gorgeous it was insane. You're so pretty :)))) Also Berry Barn!!!",
+        image:
+            "../src/assets/lovely-date.jpeg",
+    },
+    {
         title: "What I’m Excited For Next",
         text: "I'm really excited to see what the future holds for us. I hope we grow old together, and continue to raise cat children throughout our whole life!!!",
-        image:
-            "../src/assets/Us!.jpeg",
-    },
+        image: "../src/assets/Us!.jpeg"
+    }
 ];
 
 export const galleryItems = [
     {
         type: "image",
         src: "../src/assets/First-Date.JPG",
-        caption: "Our first date",
+        caption: "Our first date together!",
     },
     {
         type: "image",
-        src: "../src/assets/first-trip.JPG",
-        caption: "Our first trip",
+        src: "../src/assets/first-trip.jpeg",
+        caption: "Our first trip to Calgary!",
     },
     {
         type: "image",
@@ -48,17 +53,27 @@ export const galleryItems = [
     {
         type: "image",
         src:  "../src/assets/first-christmas.jpeg",
-        caption: "Our first christmas!",
+        caption: "Our first christmas together!",
+    },
+    {
+        type: "image",
+        src: "../src/assets/funny-picture.JPG",
+        caption: "I had to add this pic it's so funny"
+    },
+    {
+        type: "image",
+        src: "../src/assets/last-year-bday-pic.JPG",
+        caption: "Last years pic of us on your birthday!",
     },
     {
         type: "image",
         src: "../src/assets/building-bed-frame.jpeg",
-        caption: "When we were building your new bed frame",
+        caption: "When we were building your new bed frame, I remember specifically sending this pic to my sibling group chat hehe",
     },
     {
         type: "image",
         src: "../src/assets/working-out.jpeg",
-        caption: "Us working out",
+        caption: "Us working out! Thank you for coming to work out with me :)",
     },
     {
         type: "video",
@@ -77,6 +92,11 @@ export const galleryItems = [
     },
     {
         type: "image",
+        src: "../src/assets/absolute-beauty.JPG",
+        caption: "Pretty picture of my lovely partner <3",
+    },
+    {
+        type: "image",
         src: "../src/assets/Silly-Billy.jpeg",
         caption: "Silly billy",
     },
@@ -89,6 +109,16 @@ export const galleryItems = [
         type: "image",
         src: "../src/assets/Move-in-pic.jpeg",
         caption: "Having our first meal together at the new place",
+    },
+    {
+        type: "image",
+        src: "../src/assets/drippy.JPG",
+        caption: "I remember taking this pic because you were dripped out the wazoo",
+    },
+    {
+        type: "image",
+        src: "../src/assets/sleeping-beauty.JPG",
+        caption: "You and Hawk sleeping together :) cuties",
     },
 
 ];

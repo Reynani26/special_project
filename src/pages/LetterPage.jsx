@@ -18,7 +18,7 @@ export default function LetterPage() {
                 className="mx-auto mt-10 max-w-3xl rounded-[2rem] bg-gradient-to-br from-rose-50 to-pink-50 p-8 shadow-inner md:p-10"
             >
                 <div className="space-y-5 text-slate-700 md:text-lg">
-                    <p className="leading-8">
+                    <p>
                         To the person I admire so deeply,
                     </p>
                     <p className="leading-8">
@@ -35,7 +35,7 @@ export default function LetterPage() {
 
                 <div className="mt-8 rounded-[1.5rem] bg-white/80 p-5 shadow-sm">
                     <p className="text-lg font-semibold text-green-600">With love,</p>
-                    <p className="mt-2 text-slate-600">Mahal</p>
+                    <p className="mt-2 text-slate-600">Mahal 💙</p>
                 </div>
             </motion.div>
         </section>
