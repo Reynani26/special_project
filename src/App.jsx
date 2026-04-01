@@ -7,7 +7,7 @@ import HomePage from "./pages/HomePage";
 import StoryPage from "./pages/StoryPage";
 import GalleryPage from "./pages/GalleryPage";
 import LetterPage from "./pages/LetterPage";
-import froggies from "./assets/frogs.png";
+import froggies from "../public/images/frogs.png";
 
 const pages = [
     { id: "home", label: "Home" },
