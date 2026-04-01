@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar.jsx";
 import PageWrapper from "./components/PageWrapper";
 import HomePage from "./pages/HomePage";
 import StoryPage from "./pages/StoryPage";
