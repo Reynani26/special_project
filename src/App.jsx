@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Navbar from "../src/components/Navbar";
-import PageWrapper from "../src/components/PageWrapper";
-import AccessPage from "../src/pages/AccessPage";
-import HomePage from "../src/pages/HomePage";
-import StoryPage from "../src/pages/StoryPage";
-import GalleryPage from "../src/pages/GalleryPage";
-import LetterPage from "../src/pages/LetterPage";
+import Navbar  from "../src/components/Navbar.jsx";
+import PageWrapper from "../src/components/PageWrapper.jsx";
+import AccessPage from "../src/pages/AccessPage.jsx";
+import HomePage from "../src/pages/HomePage.jsx";
+import StoryPage from "../src/pages/StoryPage.jsx";
+import GalleryPage from "../src/pages/GalleryPage.jsx";
+import LetterPage from "../src/pages/LetterPage.jsx";
 import froggies from "../src/assets/frogs.png";
 
 const pages = [
