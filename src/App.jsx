@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Navbar from "./components/Navbar";
-import PageWrapper from "./components/PageWrapper";
-import AccessPage from "./pages/AccessPage";
-import HomePage from "./pages/HomePage";
-import StoryPage from "./pages/StoryPage";
-import GalleryPage from "./pages/GalleryPage";
-import LetterPage from "./pages/LetterPage";
-import froggies from "./assets/frogs.png";
+import Navbar from "../src/components/Navbar";
+import PageWrapper from "../src/components/PageWrapper";
+import AccessPage from "../src/pages/AccessPage";
+import HomePage from "../src/pages/HomePage";
+import StoryPage from "../src/pages/StoryPage";
+import GalleryPage from "../src/pages/GalleryPage";
+import LetterPage from "../src/pages/LetterPage";
+import froggies from "../src/assets/frogs.png";
 
 const pages = [
     { id: "home", label: "Home" },
