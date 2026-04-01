@@ -19,7 +19,10 @@ const pages = [
 export default function App() {
     const [currentPage, setCurrentPage] = useState("home");
     const [enteredName, setEnteredName] = useState("");
-    const [isUnlocked, setIsUnlocked] = useState(false);
+    const [isUnlocked, setIsUnlocked] = useState(() => {
+        if (typeof window === "undefined") return false;
+        return localStorage.getItem("birthdayUnlocked") === "true";
+    });
     const [showError, setShowError] = useState(false);
 
     const allowedName = ["CJ", "Sweetheart"];
@@ -36,18 +39,27 @@ export default function App() {
         setCurrentPage(pages[prevIndex].id);
     };
 
+
+
     const handleUnlock = (e) => {
         e.preventDefault();
 
-        allowedName.forEach((e) => {
-            if (enteredName.trim().toLowerCase() === e.toLowerCase()) {
-                setIsUnlocked(true);
-                setShowError(false);
-            }
-            else {
-                setShowError(true);
-            }
-        });
+        const isValid = allowedName.some(
+            (name) => enteredName.trim().toLowerCase() === name.toLowerCase()
+        );
+
+        if (isValid) {
+            setIsUnlocked(true);
+            setShowError(false);
+            localStorage.setItem("birthdayUnlocked", "true");
+        } else {
+            setShowError(true);
+        }
+    };
+
+    const handleLockAgain = () => {
+        setIsUnlocked(false);
+        localStorage.removeItem("birthdayUnlocked");
     };
 
     if (!isUnlocked) {
@@ -77,6 +89,7 @@ export default function App() {
                 <div className="absolute top-0 left-1/2 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-rose-300/30 blur-[120px]" />
                 <div className="absolute bottom-0 right-0 h-[300px] w-[300px] rounded-full bg-pink-300/30 blur-[100px]" />
             </div>
+
             <Navbar
                 pages={pages}
                 currentPage={currentPage}
@@ -113,6 +126,15 @@ export default function App() {
                         </PageWrapper>
                     )}
                 </AnimatePresence>
+
+            </div>
+            <div className="text-center">
+                <button
+                    onClick={handleLockAgain}
+                    className="rounded-xl bg-green-500 px-4 py-2 text-sm font-semibold text-white text-center"
+                >
+                    Reset back to access page
+                </button>
             </div>
         </div>
     );

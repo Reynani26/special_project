@@ -15,7 +15,7 @@ export default function AccessPage({
                 </p>
 
                 <h1 className="mt-6 text-4xl font-bold tracking-tight text-green-600 md:text-6xl">
-                    A little surprise awaits
+                    Surprise! My birthday gift to you :)
                 </h1>
 
                 <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-600 md:text-lg">
